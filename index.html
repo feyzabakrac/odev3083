@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FeyBa EVDE SAĞLIK HİZMETİ</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="odev3083.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container px-5">
+        <a class="navbar-brand" href="odev3083.html"> FeyBa EVDE SAĞLIK HİZMETİ </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HİZMETLERİMİZ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">HAKKIMIZDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">İLETİŞİM</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HEADER ALANIM -->
+    <div class="container ">
+    <img src="images.jpeg" class="rounded float-start" >
+    <img src="img-2.jpeg" class="rounded float-end" >
+</div>
+<form action="https://formsubmit.co/feyzabakrac@hotmail.com" method="POST" class="row g-3 needs-validation"   novalidate  style="background-color: rgb(208, 165, 167);">
+    <!-- <div class="col-xl-6 ">
+      <label for="first_name" class="form-label" minlength="2">Adınız</label>
+      <input type="text" class="form-control"   name="first_name" id="first_name"  required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <br>
+    <div class="col-xl-6">
+      <label for="last-name" class="form-label" minlength="2">Soyadınız</label>
+      <input type="text" class="form-control" id="last_name"  name="last_name" required>
+      <div class="valid-feedback">
+        Başarılı bir şekilde doldurdunuz.
+      </div>
+    </div>
+    <br>
+    <br> -->
+    <div class="input-group">
+      <span class="input-group-text">Adınız ve Soyadınız </span>
+      <input type="text" aria-label="First name" class="form-control" required placeholder="ADINIZ">
+      <input type="text" aria-label="Last name" class="form-control" required placeholder="SOYADINIZ">
+    </div>
+    <div class="col-md-4">
+      <label for="age" class="form-label">Yaş</label>  
+      <input type="number" class="form-control" id="age" min="18" max="45" name="age" required placeholder="Yaşınızı Giriniz">
+      
+      </div>
+    </div>
+    <br>
+    <div class="col-md-4">
+      <label for="national" class="form-label">T.C Kimlik numarası</label>  
+      <input type="number" class="form-control" id="age" min="" max="45" name="national" required placeholder="T.C Numarası giriniz">
+      
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="col-8  ">
+     <label for="birthday" class="form-label">Doğum Tarihi</label>
+      <input type="date" class="form-control" id="birthday" name="birthday" min="1979-01-01" max="2005-01-01" required >
+     </div>
+     <div class="col-8  ">
+      <label for="telephone" class="form-label">Telefon Numaranız</label>
+       <input type="tel" class="form-control" id="telephone" name="telephone"  required  placeholder="Telefon Numarası Giriniz">
+      </div>
+    <fieldset>
+      <div>
+   <legend>
+    Cinsiyetiniz
+   </legend>
+   <input type="radio" id="male" name="gender" value="male"  required> 
+   <label for="male">Erkek</label>
+   <input type="radio" id="female" name="gender" value="female"  required>
+   <label for="female">Kadın</label>
+  </div>
+ </fieldset>
+ <fieldset>
+  <div>
+    
+<legend>
+Medeni Durum
+</legend>
+<input type="radio" id="marital_status" name="marital_status" required> 
+<label for="marital_status">Evli</label>
+<input type="radio" id="marital_status" name="marital_status" required>
+<label for="marital_status">Bekar</label>
+</div>
+</fieldset>
+<div class="col-md-6">
+<label for="email" class="form-label">E-mail Adresiniz</label>
+
+<input type="email" class="form-control" id="email" name="email" required>
+
+<br>
+
+<div class="col-md-6">
+<label for="service" class="form-label" >İstediğiniz Hizmeti Seçin</label>
+<select class="form-select " id="service" name="service"   >
+  <option selected disabled value="">Hizmet Seçiniz</option>
+<option>Evde Serum Takma</option>
+<option>Evde Pansuman Yapımı</option>
+<option>Enjeksiyon Uygulaması</option>
+<option>Evde Fizik Tedavi</option>
+<option>Danışmanlık Hizmeti</option>
+<option>Evde Kan Alma </option>
+
+</select>
+
+
+</div>
+<br>
+<br>
+<div class="col-md-6">
+    <label for="city" class="form-label" >Yaşadığınız İlçe</label>
+    <select class="form-select " id="city" name="city"  placeholder="Yaşadığınız İlçe yazın" >
+      <option selected disabled value="">İlçe Seçiniz</option>
+    <option>Pendik</option>
+    <option>Kadıköy</option>
+    <option>Ataşehir</option>
+    <option>Maltepe</option>
+    <option>Bostancı</option>
+    <option>Kartal</option>
+    
+    </select>
+    
+    
+    </div>
+<br>
+<div class="col-12 ">
+<label for="comment">İstediğiniz hizmeti Özetleyin</label>
+
+<textarea id="comment" name="comment" rows="6" cols="60" >
+
+</textarea>
+</div>
+<div class="col-12 ">
+    <label for="comment">Açık adres </label>
+    
+    <textarea id="comment" name="comment" rows="6" cols="60"  >
+    
+    </textarea>
+    </div>
+
+</div>
+<br>
+<br>
+<hr>
+<div class="col ">
+<div>Sitemizi Beğendiniz mi ?</div>
+<label for="points">Puanlar (0-10 arası):</label>
+<input type="range" id="points" name="points" min="0" max="10">
+<br>
+<br>
+
+
+  </div>
+  <div class="col-8 mt-3 mb-5">
+  <button type="reset" class="btn btn-danger ">Bilgileri Sıfırla</button>
+  <button class="btn btn-danger   " type="submit">Formu Gönder</button>
+</div>
+  </form>
+<footer class="bg-dark py-4 mt-auto">
+  <div class="container px-5">
+      <div class="row align-items-center justify-content-center  flex-column flex-sm-row">
+          <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; FEYZA BAKRAÇ 2024</div></div>
+
+
+
+
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
